@@ -24,13 +24,15 @@ export default function Login() {
 
   return (
     <div className="flex flex-col items-center justify-start min-h-screen bg-black pt-10">
-      <div className="p-6 bg-white rounded shadow-md">
-        <h2 className="text-xl font-bold text-center">Asset Manager Login</h2>
+      <div className="p-6  rounded shadow-md">
+        <h2 className="text-xl text-white font-bold text-center">
+          Asset Manager Login
+        </h2>
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="mt-2 p-2 border rounded w-full bg-amber-200"
+          className="mt-2 p-2 border rounded w-full bg-white text-black"
           placeholder="Enter password"
         />
         {error && <p className="text-red-500">{error}</p>}
