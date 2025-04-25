@@ -16,7 +16,7 @@ export default function Login() {
 
     const data = await res.json();
     if (data.success) {
-      router.push("/imagemanager");
+      router.push("/urltable");
     } else {
       setError("Incorrect password");
     }

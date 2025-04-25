@@ -152,11 +152,20 @@ export default function Home() {
       >
         Upload
       </button>
-
-      <Link href="/gallery" className="bg-green-300 rounded mt-4 px-4 py-2">
-        Gallery
-      </Link>
-
+      <div className="flex gap-4">
+        <Link
+          href="/gallery"
+          className="bg-green-300 rounded mt-4 px-4 py-2 text-sm"
+        >
+          Gallery
+        </Link>
+        <Link
+          href="/urltable"
+          className="bg-green-300 rounded mt-4 px-4 py-2 text-sm"
+        >
+          URLs
+        </Link>
+      </div>
       {/* Search Section */}
       <h2 className="text-xl font-bold mt-8 mb-4">Search Images</h2>
       <input

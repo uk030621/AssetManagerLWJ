@@ -42,16 +42,22 @@ export default function GalleryPage() {
 
   return (
     <div className="max-w-5xl mx-auto p-6">
-      <div className="flex gap-4">
+      <div className="flex gap-3">
         <Link
           href="/imagemanager"
-          className="bg-green-300 rounded mt-4 px-4 py-2"
+          className="bg-green-300 rounded mt-4 px-4 py-2 text-sm"
         >
           Asset Manager
         </Link>
+        <Link
+          href="/urltable"
+          className="bg-green-300 rounded mt-4 px-4 py-2 text-sm "
+        >
+          URLs
+        </Link>
         <button
           onClick={handleRefresh}
-          className="bg-gray-700 text-white px-4 py-2 rounded mt-4"
+          className="bg-gray-700 text-white px-4 py-2 rounded mt-4 text-sm"
         >
           Refresh
         </button>
