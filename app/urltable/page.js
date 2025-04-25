@@ -47,13 +47,13 @@ export default function AssetTable() {
       <div className="flex justify-center items-center space-x-4 mt-4">
         <Link
           href="/imagemanager"
-          className="bg-black text-white rounded px-4 py-2 text-center w-fit text-sm"
+          className="bg-slate-700 text-white rounded px-4 py-2 text-center w-fit text-sm"
         >
           Asset Manager
         </Link>
         <Link
           href="/gallery"
-          className="bg-black text-white rounded px-4 py-2 text-center w-fit text-sm"
+          className="bg-slate-700 text-white rounded px-4 py-2 text-center w-fit text-sm"
         >
           Gallery
         </Link>

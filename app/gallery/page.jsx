@@ -45,13 +45,13 @@ export default function GalleryPage() {
       <div className="flex gap-3">
         <Link
           href="/imagemanager"
-          className="bg-black text-white rounded mt-4 px-4 py-2 text-sm"
+          className="bg-slate-700 text-white rounded mt-4 px-4 py-2 text-sm"
         >
           Asset Manager
         </Link>
         <Link
           href="/urltable"
-          className="bg-black text-white rounded mt-4 px-4 py-2 text-sm "
+          className="bg-slate-700 text-white rounded mt-4 px-4 py-2 text-sm "
         >
           URLs
         </Link>

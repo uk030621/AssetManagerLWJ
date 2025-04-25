@@ -155,13 +155,13 @@ export default function Home() {
       <div className="flex gap-4">
         <Link
           href="/gallery"
-          className="bg-black text-white rounded mt-4 px-4 py-2 text-sm"
+          className="bg-slate-700 text-white rounded mt-4 px-4 py-2 text-sm"
         >
           Gallery
         </Link>
         <Link
           href="/urltable"
-          className="bg-black text-white rounded mt-4 px-4 py-2 text-sm"
+          className="bg-slate-700 text-white rounded mt-4 px-4 py-2 text-sm"
         >
           URLs
         </Link>
