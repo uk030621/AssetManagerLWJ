@@ -182,18 +182,39 @@ export default function Home() {
         onChange={(e) => setSearchTerm(e.target.value)}
         className="pl-2 mb-4 border text-sm rounded w-[250px]"
       />
-      <input
-        type="date"
-        value={startDate}
-        onChange={(e) => setStartDate(e.target.value)}
-        className="pl-2 mb-4 text-sm border rounded w-full h-12 bg-white"
-      />
-      <input
-        type="date"
-        value={endDate}
-        onChange={(e) => setEndDate(e.target.value)}
-        className="pl-2 mb-4 text-sm border rounded w-full h-12 bg-white"
-      />
+      <div className="flex flex-col">
+        <label className="text-sm font-semibold text-gray-600">
+          Select Start Date
+        </label>
+        <div className="relative">
+          <input
+            type="date"
+            value={startDate}
+            onChange={(e) => setStartDate(e.target.value)}
+            className="pl-10 mb-4 text-sm border rounded w-full h-12 bg-white"
+          />
+          <span className="absolute left-3 top-3 text-gray-500">
+            📅 {/* Calendar Icon */}
+          </span>
+        </div>
+      </div>
+
+      <div className="flex flex-col">
+        <label className="text-sm font-semibold text-gray-600">
+          Select End Date
+        </label>
+        <div className="relative">
+          <input
+            type="date"
+            value={endDate}
+            onChange={(e) => setEndDate(e.target.value)}
+            className="pl-10 mb-4 text-sm border rounded w-full h-12 bg-white"
+          />
+          <span className="absolute left-3 top-3 text-gray-500">
+            📅 {/* Calendar Icon */}
+          </span>
+        </div>
+      </div>
       <button
         onClick={() => handleSearch(1)}
         className="bg-green-500 text-white px-4 py-2 rounded"
