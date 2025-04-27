@@ -173,18 +173,18 @@ export default function Home() {
         placeholder="Search by folder"
         value={searchFolder}
         onChange={(e) => setSearchFolder(e.target.value)}
-        className="pl-2 mb-4 border text-sm rounded w-[250px]"
+        className="pl-2 mb-4 border  rounded w-[250px]"
       />
       <input
         type="text"
         placeholder="Search by tag"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="pl-2 mb-4 border text-sm rounded w-[250px]"
+        className="pl-2 mb-4 border  rounded w-[250px]"
       />
       <div className="flex flex-col">
         <label className="text-sm font-semibold text-gray-600">
-          Select Start Date
+          📅 Select Start Date
         </label>
         <div className="relative">
           <input
@@ -193,15 +193,12 @@ export default function Home() {
             onChange={(e) => setStartDate(e.target.value)}
             className="pl-10 mb-4 text-sm border rounded w-[250px] h-12 bg-white"
           />
-          <span className="absolute left-3 top-3 text-gray-500 mr-4">
-            📅 {/* Calendar Icon */}
-          </span>
         </div>
       </div>
 
       <div className="flex flex-col">
         <label className="text-sm font-semibold text-gray-600">
-          Select End Date
+          📅 Select End Date
         </label>
         <div className="relative">
           <input
@@ -210,9 +207,6 @@ export default function Home() {
             onChange={(e) => setEndDate(e.target.value)}
             className="pl-10 mb-4 text-sm border rounded w-[250px] h-12 bg-white"
           />
-          <span className="absolute left-3 top-3 text-gray-500 mr-4">
-            📅 {/* Calendar Icon */}
-          </span>
         </div>
       </div>
       <button
