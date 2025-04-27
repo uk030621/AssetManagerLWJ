@@ -186,13 +186,13 @@ export default function Home() {
         type="date"
         value={startDate}
         onChange={(e) => setStartDate(e.target.value)}
-        className="pl-2 mb-4 text-sm border rounded w-full h-12 bg-white appearance-none"
+        className="pl-2 mb-4 text-sm border rounded w-full h-12 bg-white"
       />
       <input
         type="date"
         value={endDate}
         onChange={(e) => setEndDate(e.target.value)}
-        className="pl-2 mb-4 text-sm border rounded w-full h-12 bg-white appearance-none"
+        className="pl-2 mb-4 text-sm border rounded w-full h-12 bg-white"
       />
       <button
         onClick={() => handleSearch(1)}
