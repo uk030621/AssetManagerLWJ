@@ -111,7 +111,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center p-8">
+    <div className="flex flex-col items-center p-2">
       {/* Upload Section */}
       <h2 className="text-xl font-bold mb-4">Asset Manager</h2>
       <div className="flex gap-4">
@@ -137,14 +137,14 @@ export default function Home() {
         placeholder="Enter folder name"
         value={folder}
         onChange={(e) => setFolder(e.target.value)}
-        className="pl-2 mb-4 border text-sm rounded w-[250px]"
+        className="pl-2 mb-4 border  rounded w-[250px]"
       />
       <input
         type="text"
         placeholder="Enter tags (comma-separated)"
         value={tags}
         onChange={(e) => setTags(e.target.value)}
-        className="pl-2 mb-4 border text-sm rounded w-[250px]"
+        className="pl-2 mb-4 border  rounded w-[250px]"
       />
       <button
         onClick={handleUpload}
@@ -155,13 +155,13 @@ export default function Home() {
       <div className="flex gap-4">
         <Link
           href="/gallery"
-          className="bg-slate-700 text-white rounded mt-4 px-4 py-2 text-sm"
+          className="bg-slate-700 text-white rounded mt-4 px-4 py-2 "
         >
           Gallery
         </Link>
         <Link
           href="/urltable"
-          className="bg-slate-700 text-white rounded mt-4 px-4 py-2 text-sm"
+          className="bg-slate-700 text-white rounded mt-4 px-4 py-2 "
         >
           URLs
         </Link>
@@ -191,9 +191,9 @@ export default function Home() {
             type="date"
             value={startDate}
             onChange={(e) => setStartDate(e.target.value)}
-            className="pl-10 mb-4 text-sm border rounded w-full h-12 bg-white"
+            className="pl-10 mb-4 text-sm border rounded w-[250px] h-12 bg-white"
           />
-          <span className="absolute left-3 top-3 text-gray-500">
+          <span className="absolute left-3 top-3 text-gray-500 mr-4">
             📅 {/* Calendar Icon */}
           </span>
         </div>
@@ -208,9 +208,9 @@ export default function Home() {
             type="date"
             value={endDate}
             onChange={(e) => setEndDate(e.target.value)}
-            className="pl-10 mb-4 text-sm border rounded w-full h-12 bg-white"
+            className="pl-10 mb-4 text-sm border rounded w-[250px] h-12 bg-white"
           />
-          <span className="absolute left-3 top-3 text-gray-500">
+          <span className="absolute left-3 top-3 text-gray-500 mr-4">
             📅 {/* Calendar Icon */}
           </span>
         </div>
