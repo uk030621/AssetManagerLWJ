@@ -183,7 +183,7 @@ export default function Home() {
         className="pl-2 mb-4 border  rounded w-[250px]"
       />
       <div className="flex flex-col">
-        <label className="text-sm font-semibold text-gray-600">
+        <label className="text-sm font-semibold text-black">
           📅 Select Start Date
         </label>
         <div className="relative">
@@ -191,13 +191,13 @@ export default function Home() {
             type="date"
             value={startDate}
             onChange={(e) => setStartDate(e.target.value)}
-            className="pl-10 mb-4 text-sm border rounded w-[250px] h-12 bg-white"
+            className="pl-10 mb-4 text-sm border rounded w-[250px] h-12 bg-white text-black"
           />
         </div>
       </div>
 
       <div className="flex flex-col">
-        <label className="text-sm font-semibold text-gray-600">
+        <label className="text-sm font-semibold text-black">
           📅 Select End Date
         </label>
         <div className="relative">
@@ -205,7 +205,7 @@ export default function Home() {
             type="date"
             value={endDate}
             onChange={(e) => setEndDate(e.target.value)}
-            className="pl-10 mb-4 text-sm border rounded w-[250px] h-12 bg-white"
+            className="pl-10 mb-4 text-sm border rounded w-[250px] h-12 bg-white text-black"
           />
         </div>
       </div>
