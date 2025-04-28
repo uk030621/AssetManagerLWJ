@@ -180,32 +180,28 @@ export default function Home() {
         placeholder="Search by tag"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="pl-2 mb-4 border  rounded w-[250px]"
+        className="pl-2 mb-4 border rounded w-[250px]"
       />
       <div className="flex flex-col">
-        <label className="text-sm font-semibold text-black">
-          📅 Select Start Date
-        </label>
+        <label className="text-sm font-semibold ">📅 Select Start Date</label>
         <div className="relative">
           <input
             type="date"
             value={startDate}
             onChange={(e) => setStartDate(e.target.value)}
-            className="pl-10 mb-4 text-sm border rounded w-[250px] h-12 bg-white text-black"
+            className="pl-10 mb-4 text-sm border rounded w-[250px] h-12 "
           />
         </div>
       </div>
 
       <div className="flex flex-col">
-        <label className="text-sm font-semibold text-black">
-          📅 Select End Date
-        </label>
+        <label className="text-sm font-semibold ">📅 Select End Date</label>
         <div className="relative">
           <input
             type="date"
             value={endDate}
             onChange={(e) => setEndDate(e.target.value)}
-            className="pl-10 mb-4 text-sm border rounded w-[250px] h-12 bg-white text-black"
+            className="pl-10 mb-4 text-sm border rounded w-[250px] h-12 "
           />
         </div>
       </div>
