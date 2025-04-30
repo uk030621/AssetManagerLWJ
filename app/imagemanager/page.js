@@ -137,7 +137,7 @@ export default function Home() {
         placeholder="Enter folder name"
         value={folder}
         onChange={(e) => setFolder(e.target.value)}
-        className="pl-2 mb-4 border  rounded w-[250px]"
+        className="pl-2 mb-4 border rounded w-[250px]"
       />
       <input
         type="text"

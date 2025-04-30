@@ -9,14 +9,29 @@ export default function AssetTable() {
   const [assets, setAssets] = useState([]);
   const [searchTag, setSearchTag] = useState(""); // ✅ Added dynamic tag search
   const [loading, setLoading] = useState(true); // ✅ Loading state
+  const [progress, setProgress] = useState(0); // ✅ Progress bar state
 
   // Fetch all assets when the page loads
   useEffect(() => {
     const fetchAssets = async () => {
+      setLoading(true);
+      setProgress(0); // ✅ Reset progress
+
+      // Simulate progress increase while fetching
+      const interval = setInterval(() => {
+        setProgress((oldProgress) => {
+          if (oldProgress >= 95) return oldProgress; // Stop at 95% until data loads
+          return oldProgress + 5;
+        });
+      }, 200);
+
       const res = await fetch(`/api/search?page=1&limit=9999`);
       const data = await res.json();
       setAssets(data.images || []);
-      setLoading(false); // ✅ Stop loading
+
+      clearInterval(interval);
+      setProgress(100); // ✅ Jump to full progress before rendering results
+      setLoading(false);
     };
 
     fetchAssets();
@@ -84,9 +99,11 @@ export default function AssetTable() {
       {loading && (
         <div className="text-center text-gray-500 my-4">
           <p className="font-semibold">Loading assets...</p>
-          <div className="w-full h-2 bg-gray-300 rounded mt-2">
-            <div className="h-2 bg-blue-500 rounded w-3/4 animate-pulse"></div>{" "}
-            {/* Progress Bar */}
+          <div className="w-full h-2 bg-gray-300 rounded mt-2 relative">
+            <div
+              className="h-2 bg-blue-500 rounded transition-all duration-200 ease-in-out"
+              style={{ width: `${progress}%` }} // ✅ Dynamic width change
+            ></div>
           </div>
         </div>
       )}
