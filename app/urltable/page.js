@@ -54,7 +54,7 @@ export default function AssetTable() {
   );
 
   return (
-    <div className="p-6">
+    <div className="p-6 bg-background w-screen h-screen">
       {/* Header */}
       <h1 className="text-2xl font-bold mb-4 text-center">
         Asset URLs and Tags

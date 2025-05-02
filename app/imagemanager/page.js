@@ -111,7 +111,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center p-2">
+    <div className="bg-background min-h-screen h-auto flex flex-col items-center p-2">
       {/* Upload Section */}
       <h2 className="text-xl font-bold mb-4">Asset Manager</h2>
       <div className="flex gap-4">
