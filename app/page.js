@@ -25,7 +25,10 @@ export default function Login() {
   return (
     <div className="flex flex-col items-center justify-start min-h-screen pt-10 bg-background">
       <div className="p-6">
-        <h2 className="text-2xl mb-2 font-bold text-center">Asset Manager Login</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 font-bold text-center">
+          Asset Manager Login
+        </h2>
+
         <input
           type="password"
           value={password}
@@ -36,7 +39,7 @@ export default function Login() {
         {error && <p className="text-red-500">{error}</p>}
         <button
           onClick={handleLogin}
-          className="mt-4 p-2 bg-slate-700 text-white font-bold hover:bg-green-800 rounded mx-auto block w-full"
+          className="mt-4 p-2 bg-slate-700 text-white font-bold rounded mx-auto block w-full"
         >
           Login
         </button>
